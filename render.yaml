@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: n8n-with-ffmpeg
+    env: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: N8N_PORT
+        value: $PORT
+      - key: N8N_HOST
+        value: 0.0.0.0
+      - key: WEBHOOK_URL
+        value: https://REPLACE_ME.onrender.com/
+      - key: N8N_ENCRYPTION_KEY
+        generateValue: true
+      - key: GENERIC_TIMEZONE
+        value: Europe/Berlin
+      - key: N8N_DIAGNOSTICS_ENABLED
+        value: "false"
+
+    disk:
+      name: n8n-data
+      mountPath: /home/node/.n8n
+      sizeGB: 5
