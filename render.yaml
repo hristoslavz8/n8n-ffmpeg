@@ -8,7 +8,9 @@ services:
       - key: N8N_PORT
         value: $PORT
       - key: N8N_HOST
-        value: 0.0.0.0
+        value: hristoslavzagortchev.com
+      - key: N8N_PROTOCOL
+        value: https
       - key: WEBHOOK_URL
         value: https://hristoslavzagortchev.com/
       - key: N8N_ENCRYPTION_KEY
