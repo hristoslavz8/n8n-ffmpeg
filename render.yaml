@@ -10,7 +10,7 @@ services:
       - key: N8N_HOST
         value: 0.0.0.0
       - key: WEBHOOK_URL
-        value: https://REPLACE_ME.onrender.com/
+        value: https://n8n-ffmpeg-exfg.onrender.com
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
       - key: GENERIC_TIMEZONE
