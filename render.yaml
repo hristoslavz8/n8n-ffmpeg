@@ -10,7 +10,7 @@ services:
       - key: N8N_HOST
         value: 0.0.0.0
       - key: WEBHOOK_URL
-        value: https://n8n-ffmpeg-exfg.onrender.com
+        value: https://hristoslavzagortchev.com/
       - key: N8N_ENCRYPTION_KEY
         generateValue: true
       - key: GENERIC_TIMEZONE
